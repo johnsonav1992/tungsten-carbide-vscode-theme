@@ -1,0 +1,21 @@
+{
+  "name": "tungsten-hyperion",
+  "displayName": "Tungsten Hyperion",
+  "description": "A dark theme with a fresh, metallic look",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Tungsten Hyperion",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Tungsten Hyperion-color-theme.json"
+      }
+    ]
+  }
+}
