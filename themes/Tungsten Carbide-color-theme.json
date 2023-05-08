@@ -1,7 +1,7 @@
 {
 	"name": "Tungsten Carbide",
 	"colors": {
-		"editor.background": "#191919",
+		"editor.background": "#1c2125",
 	},
 	"tokenColors": [
 		{
@@ -11,17 +11,30 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#b3a9ba"
+				"foreground": "#605369"
 			}
 		},
 		{
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"string constant.other.placeholder"
+				"meta.definition.variable.name",
+				"support.variable",
+				"entity.name.variable",
+				"constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#73bff1"
+				"foreground": "#acfcff"
+			}
+		},
+		{
+			"name": "Constants and enums",
+			"scope": [
+				"variable.other.constant",
+				"variable.other.enummember"
+			],
+			"settings": {
+				"foreground": "#0186ce",
 			}
 		},
 		{
@@ -34,22 +47,28 @@
 				,"fontStyle": "bold italic"
 			}
 		},
-		{
-			"name": "Invalid",
-			"scope": [
-				"invalid",
-				"invalid.illegal"
-			],
-			"settings": {
-				"foreground": "#f83f5e"
-			}
-		},
+		// {
+		// 	"name": "Invalid",
+		// 	"scope": [
+		// 		"invalid",
+		// 		"invalid.illegal"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#f83f5e"
+		// 	}
+		// },
 		{
 			"name": "Keyword, Storage",
 			"scope": [
 				"keyword",
 				"storage.type",
-				"storage.modifier"
+				"storage.modifier",
+				"keyword.control",
+				"source.cpp keyword.operator.new",
+				"keyword.operator.delete",
+				"keyword.other.using",
+				"keyword.other.operator",
+				"entity.name.operator"
 			],
 			"settings": {
 				"foreground": "#50b4f1"
@@ -68,7 +87,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#3ba7f7"
+				"foreground": "#50b4f1"
 			}
 		},
 		{
@@ -80,7 +99,7 @@
 				"punctuation.definition.tag.end.html",
 			],
 			"settings": {
-				"foreground": "#566996"
+				"foreground": "#50b4f1"
 			}
 		},
 		{
@@ -107,15 +126,15 @@
 				"foreground": "#d9f461"
 			}
 		},
-		{
-			"name": "Block Level Variables",
-			"scope": [
-				"meta.block variable.other"
-			],
-			"settings": {
-				"foreground": "#acfcff"
-			}
-		},
+		// {
+		// 	"name": "Block Level Variables",
+		// 	"scope": [
+		// 		"meta.block variable.other"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#acfcff"
+		// 	}
+		// },
 		{
 			"name": "Other Variable, String Link",
 			"scope": [
@@ -181,8 +200,18 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#2dfb83d7"
+				"foreground": "#86fb2dda"
 				,"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "JSX Props",
+			"scope": [
+				"entity.other.attribute-name.js.jsx"
+			],
+			"settings": {
+				"foreground": "#fac2bcd7"
+				, "fontStyle": "italic"
 			}
 		},
 		{
