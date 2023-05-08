@@ -1,4 +1,4 @@
-## Tungsten Hyperion VS Code Theme
+## Tungsten Carbide VS Code Theme
 
 My first theme for VS Code! Metallic and sleek - reminiscent of the coolest metal on the periodic table!
 

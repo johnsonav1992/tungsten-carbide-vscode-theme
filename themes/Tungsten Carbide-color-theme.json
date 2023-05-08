@@ -2,9 +2,6 @@
 	"name": "Tungsten Carbide",
 	"colors": {
 		"editor.background": "#191919",
-		"editor.foreground": "#f42f1d",
-		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
 	},
 	"tokenColors": [
 		{
@@ -14,7 +11,6 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#b3a9ba"
 			}
 		},
@@ -25,7 +21,7 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#63b4ea"
+				"foreground": "#73bff1"
 			}
 		},
 		{
@@ -65,7 +61,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#2ca8f4"
+				"foreground": "#50b4f1"
 			}
 		},
 		{
@@ -75,17 +71,13 @@
 				"constant.other.color",
 				"punctuation",
 				"meta.tag",
-				// "punctuation.definition.tag",
 				"punctuation.separator.inheritance.php",
-				// "punctuation.definition.tag.html",
-				// "punctuation.definition.tag.begin.html",
-				// "punctuation.definition.tag.end.html",
 				"punctuation.section.embedded",
 				"keyword.other.template",
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#5f5f5f"
+				"foreground": "#3ba7f7"
 			}
 		},
 		{
@@ -97,7 +89,7 @@
 				"punctuation.definition.tag.end.html",
 			],
 			"settings": {
-				"foreground": "#5816fc"
+				"foreground": "#566996"
 			}
 		},
 		{
@@ -108,7 +100,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#009ab9"
+				"foreground": "#215acd"
 			}
 		},
 		{
@@ -121,7 +113,7 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#fff0d2"
+				"foreground": "#d9f461"
 			}
 		},
 		{
@@ -140,7 +132,7 @@
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#acfcff"
+				"foreground": "#ffacc4"
 			}
 		},
 		{
@@ -156,7 +148,7 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#d4d5d1"
+				"foreground": "#73b08b"
 			}
 		},
 		{
@@ -171,7 +163,7 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#C3E88D"
+				"foreground": "#d1c2c2"
 			}
 		},
 		{
