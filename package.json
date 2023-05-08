@@ -1,6 +1,6 @@
 {
-  "name": "tungsten-hyperion",
-  "displayName": "Tungsten Hyperion",
+  "name": "tungsten-carbide",
+  "displayName": "Tungsten Carbide",
   "description": "A dark theme with a fresh, metallic look",
   "version": "0.0.1",
   "engines": {
@@ -12,9 +12,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Tungsten Hyperion",
+        "label": "Tungsten Carbide",
         "uiTheme": "vs-dark",
-        "path": "./themes/Tungsten Hyperion-color-theme.json"
+        "path": "./themes/Tungsten Carbide-color-theme.json"
       }
     ]
   }

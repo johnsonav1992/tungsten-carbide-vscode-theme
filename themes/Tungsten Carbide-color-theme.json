@@ -1,8 +1,8 @@
 {
-	"name": "Tungsten Hyperion",
+	"name": "Tungsten Carbide",
 	"colors": {
 		"editor.background": "#191919",
-		"editor.foreground": "#eeffff",
+		"editor.foreground": "#f42f1d",
 		"activityBarBadge.background": "#007acc",
 		"sideBarTitle.foreground": "#bbbbbb"
 	},
@@ -15,7 +15,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#9ad1d472"
+				"foreground": "#b3a9ba"
 			}
 		},
 		{
@@ -25,18 +25,28 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#63cfea"
+				"foreground": "#63b4ea"
 			}
 		},
 		{
-			"name": "Colors",
+			"name": "Types",
 			"scope": [
-				"constant.other.color"
+				"entity.name.type",
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#2936ec"
+				,"fontStyle": "bold italic"
 			}
 		},
+		// {
+		// 	"name": "Colors",
+		// 	"scope": [
+		// 		"constant.other.color"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#ffffff"
+		// 	}
+		// },
 		{
 			"name": "Invalid",
 			"scope": [
@@ -44,7 +54,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#b5001e"
+				"foreground": "#f83f5e"
 			}
 		},
 		{
@@ -65,17 +75,29 @@
 				"constant.other.color",
 				"punctuation",
 				"meta.tag",
-				"punctuation.definition.tag",
+				// "punctuation.definition.tag",
 				"punctuation.separator.inheritance.php",
-				"punctuation.definition.tag.html",
-				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html",
+				// "punctuation.definition.tag.html",
+				// "punctuation.definition.tag.begin.html",
+				// "punctuation.definition.tag.end.html",
 				"punctuation.section.embedded",
 				"keyword.other.template",
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#deff9f"
+				"foreground": "#5f5f5f"
+			}
+		},
+		{
+			"name": "HTML Tag Brackets",
+			"scope": [
+				"punctuation.definition.tag",
+				"punctuation.definition.tag.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html",
+			],
+			"settings": {
+				"foreground": "#5816fc"
 			}
 		},
 		{
@@ -164,7 +186,19 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#02f1c5"
+				"foreground": "#470fff"
+				,"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "JSX Tags",
+			"scope": [
+				"support.class.component.js.jsx",
+				"markup.changed.git_gutter",
+				"support.type.sys-types"
+			],
+			"settings": {
+				"foreground": "#2dfb83d7"
 				,"fontStyle": "bold"
 			}
 		},
