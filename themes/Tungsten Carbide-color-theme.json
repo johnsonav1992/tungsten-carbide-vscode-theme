@@ -43,7 +43,7 @@
 				"entity.name.type",
 			],
 			"settings": {
-				"foreground": "#2936ec"
+				"foreground": "#3b45d1"
 				,"fontStyle": "bold italic"
 			}
 		},
@@ -188,16 +188,17 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#470fff"
+				"foreground": "#3b45d1"
 				,"fontStyle": "bold"
 			}
 		},
 		{
-			"name": "JSX Tags",
+			"name": "JSX/TSX Tags",
 			"scope": [
 				"support.class.component.js.jsx",
+				"support.class.component.tsx",
 				"markup.changed.git_gutter",
-				"support.type.sys-types"
+				"support.type.sys-types",
 			],
 			"settings": {
 				"foreground": "#86fb2dda"
@@ -207,11 +208,11 @@
 		{
 			"name": "JSX Props",
 			"scope": [
-				"entity.other.attribute-name.js.jsx"
+				"entity.other.attribute-name.js.jsx",
+				"meta.tag.attributes.tsx"
 			],
 			"settings": {
-				"foreground": "#fac2bcd7"
-				, "fontStyle": "italic"
+				"foreground": "#fabcd9d7"
 			}
 		},
 		{
