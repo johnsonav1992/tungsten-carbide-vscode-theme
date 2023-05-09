@@ -1,11 +1,11 @@
 {
 	"name": "Tungsten Carbide",
 	"colors": {
-		"editor.background": "#1c2125",
-		"editor.foreground": "#d3f7f1",
+		"editor.background": "#0e1a24",
+		"editor.foreground": "#e8e8e8",
 		"editorBracketHighlight.foreground1": "#96f8a3",
 		"editorBracketHighlight.foreground3": "#1997c1",
-		"editorBracketHighlight.foreground2": "#2b4bfe"
+		"editorBracketHighlight.foreground2": "#3b58fa"
 	},
 	"tokenColors": [
 		{
@@ -15,7 +15,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#085bd7"
+				"foreground": "#126fd3"
 			}
 		},
 		{
@@ -50,7 +50,7 @@
 				"support.type.primitive"
 			],
 			"settings": {
-				"foreground": "#4747d2"
+				"foreground": "#4d4dd3"
 				,"fontStyle": "bold italic"
 			}
 		},
@@ -66,7 +66,7 @@
 				"entity.name.operator"
 			],
 			"settings": {
-				"foreground": "#788ab3",
+				"foreground": "#557edf",
 			}
 		},
 		{
@@ -209,7 +209,7 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#4747d2"
+				"foreground": "#4d4dd3"
 				,"fontStyle": "bold"
 			}
 		},
@@ -222,7 +222,7 @@
 				"support.type.sys-types",
 			],
 			"settings": {
-				"foreground": "#86fb2dda"
+				"foreground": "#7df81fda"
 				,"fontStyle": "bold"
 			}
 		},
