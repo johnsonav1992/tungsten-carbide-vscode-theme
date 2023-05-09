@@ -2,7 +2,10 @@
 	"name": "Tungsten Carbide",
 	"colors": {
 		"editor.background": "#1c2125",
-		"editorBracketHighlight.foreground1": "#f0fbfb"
+		"editor.foreground": "#d3f7f1",
+		"editorBracketHighlight.foreground1": "#96f8a3",
+		"editorBracketHighlight.foreground3": "#1997c1",
+		"editorBracketHighlight.foreground2": "#2b4bfe"
 	},
 	"tokenColors": [
 		{
@@ -12,7 +15,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#9b65c1"
+				"foreground": "#085bd7"
 			}
 		},
 		{
@@ -20,6 +23,7 @@
 			"scope": [
 				"variable",
 				"meta.definition.variable.name",
+				"meta.object-literal.key",
 				"support.variable",
 				"entity.name.variable",
 				"constant.other.placeholder"
@@ -46,7 +50,7 @@
 				"support.type.primitive"
 			],
 			"settings": {
-				"foreground": "#4750d2"
+				"foreground": "#4747d2"
 				,"fontStyle": "bold italic"
 			}
 		},
@@ -73,7 +77,7 @@
 				"keyword.operator.logical",
 			],
 			"settings": {
-				"foreground": "#efeffa",
+				"foreground": "#e8e8e8",
 			}
 		},
 		{
@@ -93,7 +97,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#b1c0c8"
+				"foreground": "#78a5bd"
 			}
 		},
 		{
@@ -205,7 +209,7 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#4750d2"
+				"foreground": "#4747d2"
 				,"fontStyle": "bold"
 			}
 		},
@@ -230,7 +234,26 @@
 				"meta.tag.attributes.tsx"
 			],
 			"settings": {
-				"foreground": "#a4adae"
+				"foreground": "#448fff"
+			}
+		},
+		{
+			"name": "HTML Attributes",
+			"scope": [
+				"entity.other.attribute-name.html"
+			],
+			"settings": {
+				"foreground": "#5fb7ed"
+			}
+		},
+		{
+			"name": "HTML Comments",
+			"scope": [
+				"comment.block.html",
+				"punctuation.definition.comment.html"
+			],
+			"settings": {
+				"foreground": "#52d486"
 			}
 		},
 		{
@@ -253,16 +276,6 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#e5ecfb"
-			}
-		},
-		{
-			"name": "Embedded Curly Brackets",
-			"scope": [
-				"punctuation.section.embedded",
-				"punctuation.section.embedded.end",
-			],
-			"settings": {
-				"foreground": "#e212d0"
 			}
 		},
 		{
