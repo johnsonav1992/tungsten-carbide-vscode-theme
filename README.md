@@ -19,7 +19,7 @@ My first theme for VS Code! Metallic and sleek with a pop of neon - reminiscent 
 ![JS](images/tc-js.png)
 
 ### CSS
-![CSS](images/tc-css.png)
+![CSS](images/tc-css.png) 
 
 ### HTML/Markup
 ![HTML](images/tc-html.png)
