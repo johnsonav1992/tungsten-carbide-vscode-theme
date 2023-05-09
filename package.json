@@ -2,7 +2,7 @@
   "name": "tungsten-carbide",
   "displayName": "Tungsten Carbide",
   "description": "A dark theme with a fresh, metallic look",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "johnsonav",
   "repository": {
     "type": "git",
@@ -10,16 +10,16 @@
   },
   "icon": "images/tc-logo.png",
   "keywords": [
-      "tungsten",
-      "carbide",
-      "metalic",
-      "sleek",
-      "alloy",
-      "gray",
-      "purple",
-      "green",
-      "blue"
-    ],
+    "tungsten",
+    "carbide",
+    "metalic",
+    "sleek",
+    "alloy",
+    "gray",
+    "purple",
+    "green",
+    "blue"
+  ],
   "engines": {
     "vscode": "^1.78.0"
   },
