@@ -1,6 +1,6 @@
 ## Tungsten Carbide VS Code Theme
 
-My first theme for VS Code! Metallic and sleek with a pop of neon - reminiscent of one of the coolest and strongest alloys out there!
+My first theme for VS Code! Dark and metallic with a pop of neon - reminiscent of one of the coolest and strongest alloys out there!
 
 **NOTES: 
 
