@@ -60,7 +60,6 @@
 				"keyword",
 				"keyword.control",
 				"source.cpp keyword.operator.new",
-				"keyword.operator.delete",
 				"keyword.other.using",
 				"keyword.other.operator",
 				"entity.name.operator"
@@ -72,12 +71,10 @@
 		{
 			"name": "Assignment, Comparison, Logical",
 			"scope": [
-				"keyword.operator.assignment",
-				"keyword.operator.comparison",
-				"keyword.operator.logical",
+				"keyword.operator"
 			],
 			"settings": {
-				"foreground": "#e8e8e8",
+				"foreground": "#e7ff9e",
 			}
 		},
 		{
