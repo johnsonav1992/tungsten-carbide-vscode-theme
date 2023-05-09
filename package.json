@@ -14,7 +14,7 @@
       {
         "label": "Tungsten Carbide",
         "uiTheme": "vs-dark",
-        "path": "./themes/Tungsten Carbide-color-theme.json"
+        "path": "./themes/tungsten-carbide-color-theme.json"
       }
     ]
   }
