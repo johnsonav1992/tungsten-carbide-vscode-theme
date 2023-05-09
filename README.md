@@ -13,7 +13,7 @@ My first theme for VS Code! Metallic and sleek with a pop of neon - reminiscent 
 ![TypeScript/React](images/tc-react.png)
 
 ### React/TypeScript - Custom Component JSX/TSX
-![TypeScript/React 2](images/tc-react2.png)
+![TypeScript/React 2](https://drive.google.com/file/d/18kIDe8jGRiupN0cc0NTXCAdae608k4F1/view?usp=sharing)
 
 ### JavaScript
 ![JS](images/tc-js.png)
