@@ -6,7 +6,7 @@
 		"editorBracketHighlight.foreground1": "#96f8a3",
 		"editorBracketHighlight.foreground3": "#1997c1",
 		"editorBracketHighlight.foreground2": "#3b58fa"
-	},
+	}, 
 	"tokenColors": [
 		{
 			"name": "Comment",
