@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/johnsonav1992/tungsten-carbide-vscode-theme"
   },
+  "icon": "images/tc-logo.png",
   "keywords": [
       "tungsten",
       "carbide",
