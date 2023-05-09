@@ -3,6 +3,22 @@
   "displayName": "Tungsten Carbide",
   "description": "A dark theme with a fresh, metallic look",
   "version": "0.0.1",
+  "publisher": "johnsonav",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnsonav1992/tungsten-carbide-vscode-theme"
+  },
+  "keywords": [
+      "tungsten",
+      "carbide",
+      "metalic",
+      "sleek",
+      "alloy",
+      "gray",
+      "purple",
+      "green",
+      "blue"
+    ],
   "engines": {
     "vscode": "^1.78.0"
   },
