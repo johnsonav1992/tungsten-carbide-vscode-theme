@@ -7,6 +7,11 @@
 		"editorBracketHighlight.foreground3": "#1997c1",
 		"editorBracketHighlight.foreground2": "#3b58fa"
 	}, 
+
+	"customCSS": [
+		".editor.background { color: #ffffff; }",
+		".editor.foreground { color: 'red'; }"
+	],
 	"tokenColors": [
 		{
 			"name": "Comment",
@@ -33,13 +38,22 @@
 			}
 		},
 		{
+			"name": "This keyword",
+			"scope": [
+				"variable.language.this"
+			],
+			"settings": {
+				"foreground": "#10dfc0"
+			}
+		},
+		{
 			"name": "Constants and enums",
 			"scope": [
 				"variable.other.constant",
 				"variable.other.enummember"
 			],
 			"settings": {
-				"foreground": "#2b95ce",
+				"foreground": "#21a3e9",
 				"fontStyle": "bold"
 			}
 		},
@@ -59,7 +73,7 @@
 			"scope": [
 				"keyword",
 				"keyword.control",
-				"source.cpp keyword.operator.new",
+				"keyword.operator.new",
 				"keyword.other.using",
 				"keyword.other.operator",
 				"entity.name.operator"
@@ -94,7 +108,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#78a5bd"
+				"foreground": "#50b4f1"
 			}
 		},
 		{
@@ -162,12 +176,12 @@
 			}
 		},
 		{
-			"name": "Constant",
+			"name": "Constant (booleans, null, undefined)",
 			"scope": [
 				"constant.language",
 			],
 			"settings": {
-				"foreground": "#def9f9"
+				"foreground": "#10dfc0"
 			}
 		},
 		{
@@ -191,7 +205,7 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#d1c2c2"
+				"foreground": "#feeded"
 			}
 		},
 		{
@@ -199,6 +213,7 @@
 			"scope": [
 				"support.type",
 				"support.class",
+				"entity.name.type.class",
 				"support.other.namespace.use.php",
 				"meta.use.php",
 				"support.other.namespace.php",
@@ -206,8 +221,8 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#4d4dd3"
-				,"fontStyle": "bold"
+				"foreground": "#10dfc0"
+				,"fontStyle": ""
 			}
 		},
 		{
