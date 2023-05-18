@@ -7,11 +7,7 @@
 		"editorBracketHighlight.foreground3": "#1997c1",
 		"editorBracketHighlight.foreground2": "#3b58fa"
 	}, 
-
-	"customCSS": [
-		".editor.background { color: #ffffff; }",
-		".editor.foreground { color: 'red'; }"
-	],
+	"semanticHighlighting": true,
 	"tokenColors": [
 		{
 			"name": "Comment",
