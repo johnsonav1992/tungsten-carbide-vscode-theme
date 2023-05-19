@@ -4,8 +4,8 @@
 		"editor.background": "#0e1a24",
 		"editor.foreground": "#e8e8e8",
 		"editorBracketHighlight.foreground1": "#96f8a3",
-		"editorBracketHighlight.foreground3": "#1997c1",
-		"editorBracketHighlight.foreground2": "#3b58fa"
+		"editorBracketHighlight.foreground2": "#3b58fa",
+		"editorBracketHighlight.foreground3": "#1997c1"
 	}, 
 	"semanticHighlighting": true,
 	"tokenColors": [
@@ -91,7 +91,10 @@
 			"name": "Template Literal Brackets",
 			"scope": [
 				"punctuation.definition.template-expression.begin",
-				"punctuation.definition.template-expression.end"
+				"punctuation.definition.template-expression.end",
+				"punctuation.definition.template-expression.begin.js.jsx",
+				"punctuation.definition.template-expression.begin.ts",
+				"meta.template.expression.js"
 			],
 			"settings": {
 				"foreground": "#e77540",
@@ -294,6 +297,58 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#788AB3"
+			}
+		},
+		{
+			"name": "CSS Properties",
+			"scope": [
+				"support.type.property-name.css"
+			],
+			"settings": {
+				"foreground": "#448fff"
+			}
+		},
+		{
+			"name": "CSS Property Value",
+			"scope": [
+				"support.constant.property-value.css"
+			],
+			"settings": {
+				"foreground": "#d9f461"
+			}
+		},
+		{
+			"name": "CSS Attribute Name",
+			"scope": [
+				"entity.other.attribute-name.class.css"
+			],
+			"settings": {
+				"foreground": "#10dfc0"
+			}
+		},
+		{
+			"name": "CSS Punc. && Pseudo Elements/Classes",
+			"scope": [
+				"punctuation.definition.entity.css",
+				"entity.other.attribute-name.pseudo-class.css",
+				"keyword.operator.combinator.css",
+				"punctuation.terminator.rule.css",
+				"entity.other.attribute-name.pseudo-element.css"
+			],
+			"settings": {
+				"foreground": "#acfcff"
+			}
+		},
+		{
+			"name": "CSS Units",
+			"scope": [
+				"keyword.other.unit.rem.css",
+				"keyword.other.unit.px.css",
+				"keyword.other.unit.em.css",
+				"keyword.other.unit.percentage.css",
+			],
+			"settings": {
+				"foreground": "#50b4f1"
 			}
 		}
 	]
