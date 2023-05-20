@@ -19,7 +19,7 @@ My first theme for VS Code! Had a blast building out the initial version of this
 ![CSS](images/tc-css-updated.png) 
 
 ### HTML/Markup
-![HTML](images/tc-html-updated.png)
+![HTML](images/tc-html-updated.png) 
 
 
 
