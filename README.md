@@ -9,7 +9,7 @@ My first theme for VS Code! Had a blast building out the initial version of this
 
 ## Screenshots
 
-### React/TypeScript
+### React/JS/TypeScript
 ![TypeScript/React](images/tc-react-updated.png)
 
 ### JavaScript
