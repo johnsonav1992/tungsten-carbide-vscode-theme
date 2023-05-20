@@ -10,19 +10,16 @@ My first theme for VS Code! Had a blast building out the initial version of this
 ## Screenshots
 
 ### React/TypeScript
-![TypeScript/React](images/tc-react.png)
-
-### React/TypeScript - Custom Component JSX/TSX
-![TypeScript/React 2](images/tc-react2.png) 
+![TypeScript/React](images/tc-react-updated.png)
 
 ### JavaScript
-![JS](images/tc-js.png) 
+![JS](images/tc-js-updated.png) 
 
 ### CSS
-![CSS](images/tc-css.png) 
+![CSS](images/tc-css-updated.png) 
 
 ### HTML/Markup
-![HTML](images/tc-html.png)
+![HTML](images/tc-html-updated.png)
 
 
 
