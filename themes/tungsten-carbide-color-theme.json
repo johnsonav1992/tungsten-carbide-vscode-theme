@@ -1,14 +1,17 @@
 {
 	"name": "Tungsten Carbide",
 	"colors": {
-		"editor.background": "#0e1a24",
+		"editor.background": "#061521",
 		"editor.foreground": "#e8e8e8",
 		"editorBracketHighlight.foreground1": "#96f8a3",
 		"editorBracketHighlight.foreground2": "#3b58fa",
 		"editorBracketHighlight.foreground3": "#1997c1"
 	}, 
 	"semanticHighlighting": true,
-	"tokenColors": [
+	"semanticTokenColors": {
+		//
+	}
+	, "tokenColors": [
 		{
 			"name": "Comment",
 			"scope": [
@@ -16,7 +19,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#126fd3"
+				"foreground": "#aebfff"
 			}
 		},
 		{
@@ -60,7 +63,7 @@
 				"support.type.primitive"
 			],
 			"settings": {
-				"foreground": "#4d4dd3"
+				"foreground": "#4350ff"
 				,"fontStyle": "bold italic"
 			}
 		},
@@ -93,11 +96,14 @@
 				"punctuation.definition.template-expression.begin",
 				"punctuation.definition.template-expression.end",
 				"punctuation.definition.template-expression.begin.js.jsx",
+				"punctuation.definition.template-expression.begin.js",
 				"punctuation.definition.template-expression.begin.ts",
+				"punctuation.definition.template-expression.end.js",
+				"punctuation.definition.template-expression.end.ts",
 				"meta.template.expression.js"
 			],
 			"settings": {
-				"foreground": "#e77540",
+				"foreground": "#e74056",
 			}
 		},
 		{
@@ -108,6 +114,15 @@
 			],
 			"settings": {
 				"foreground": "#50b4f1"
+			}
+		},
+		{
+			"name": "Arrow Function - Arrow",
+			"scope": [
+				"storage.type.function.arrow",
+			],
+			"settings": {
+				"foreground": "#d9f461"
 			}
 		},
 		{
@@ -171,7 +186,7 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#52d486"
+				"foreground": "#37e07a"
 			}
 		},
 		{
