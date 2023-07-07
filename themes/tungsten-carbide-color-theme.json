@@ -19,7 +19,7 @@
 		"button.background": "#404cfa",
 		"button.hoverBackground": "#404cfad6",
 		"icon.foreground": "#e8e8e8",
-		"tab.activeBackground": "#111779",
+		"tab.activeBackground": "#0d115c",
 		"tab.activeBorder": "#96f8a3",
 		"tab.activeForeground": "#e8e8e8",
 		"tab.hoverBackground": "#e8e8e82f",
@@ -40,6 +40,7 @@
 		"statusBar.background": "#0a0c27",
 		"titleBar.activeBackground": "#0a0c27",
 		"terminal.foreground": "#404cfa",
+		"editorGroupHeader.tabsBackground": "#030c14"
 	}, 
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
