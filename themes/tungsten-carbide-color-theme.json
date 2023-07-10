@@ -32,7 +32,7 @@
 		"breadcrumb.foreground": "#96f8a3",
 		"minimap.background": "#030c14",
 		"sideBar.background": "#030c148e",
-		"sideBar.foreground": "#96f8a391",
+		"sideBar.foreground": "#21a3e98b",
 		"sideBar.border": "#96f8a391",
 		"sideBarSectionHeader.background": "#030c14",
 		"sideBarSectionHeader.foreground": "#404cfac4",
@@ -40,6 +40,9 @@
 		"statusBar.background": "#0a0c27",
 		"titleBar.activeBackground": "#0a0c27",
 		"terminal.foreground": "#404cfa",
+		"terminal.tab.activeBorder": "#404cfa",
+		"terminal.border": "#acfcff",
+		"terminalCursor.foreground": "#96f8a3",
 		"editorGroupHeader.tabsBackground": "#030c14"
 	}, 
 	"semanticHighlighting": true,
