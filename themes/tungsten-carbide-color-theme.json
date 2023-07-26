@@ -155,10 +155,18 @@
 			}
 		},
 		{
-			"name": "Storage",
+			"name": "Storage / TS Keywords",
 			"scope": [
 				"storage.type",
-				"storage.modifier"
+				"storage.modifier",
+				"keyword.operator.expression.keyof.ts",
+				"keyword.operator.expression.keyof.tsx",
+				"keyword.operator.expression.is.ts",
+				"keyword.operator.expression.is.tsx",
+				"keyword.operator.expression.in.ts",
+				"keyword.operator.expression.in.tsx",
+				"keyword.operator.expression.infer.ts",
+				"keyword.operator.expression.infer.tsx"
 			],
 			"settings": {
 				"foreground": "#50b4f1"
