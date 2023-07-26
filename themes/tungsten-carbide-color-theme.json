@@ -166,7 +166,9 @@
 				"keyword.operator.expression.in.ts",
 				"keyword.operator.expression.in.tsx",
 				"keyword.operator.expression.infer.ts",
-				"keyword.operator.expression.infer.tsx"
+				"keyword.operator.expression.infer.tsx",
+				"punctuation.definition.typeparameters.begin.ts",
+				"punctuation.definition.typeparameters.begin.tsx"
 			],
 			"settings": {
 				"foreground": "#50b4f1"
