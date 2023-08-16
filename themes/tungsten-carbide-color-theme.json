@@ -116,6 +116,19 @@
 			}
 		},
 		{
+			"name": "Type Overrides",
+			"scope": [
+				"keyword.operator.expression.typeof.ts"
+				, "meta.object.type.ts"
+				, "keyword.operator.type.ts"
+				, "meta.brace.square.ts"
+				, "keyword.operator.type.annotation.ts"
+			],
+			"settings": {
+				"fontStyle": ""
+			}
+		}
+		, {
 			"name": "Keyword",
 			"scope": [
 				"keyword",
