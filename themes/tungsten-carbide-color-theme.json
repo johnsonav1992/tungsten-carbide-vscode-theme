@@ -123,6 +123,17 @@
 				, "keyword.operator.type.ts"
 				, "meta.brace.square.ts"
 				, "keyword.operator.type.annotation.ts"
+				, "punctuation.definition.typeparameters.begin.ts"
+				, "punctuation.definition.typeparameters.end.ts"
+				, "string.quoted.single.ts"
+				, "keyword.operator.expression.typeof.tsx"
+				, "meta.object.type.tsx"
+				, "keyword.operator.type.tsx"
+				, "meta.brace.square.tsx"
+				, "keyword.operator.type.annotation.tsx"
+				, "punctuation.definition.typeparameters.begin.tsx"
+				, "punctuation.definition.typeparameters.end.tsx"
+				, "string.quoted.single.tsx"
 			],
 			"settings": {
 				"fontStyle": ""
