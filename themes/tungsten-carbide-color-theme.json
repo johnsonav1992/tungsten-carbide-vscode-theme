@@ -55,6 +55,12 @@
 			"fontStyle": "italic bold",
 			"foreground": "#404cfa"
 		},
+		"property.readonly": {
+			"fontStyle": "",
+		},
+		"parameter.defaultLibrary": {
+			"fontStyle": "",
+		}
 	}
 	, "tokenColors": [
 		{
