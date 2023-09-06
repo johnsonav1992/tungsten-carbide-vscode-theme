@@ -140,6 +140,16 @@
 				, "punctuation.definition.typeparameters.begin.tsx"
 				, "punctuation.definition.typeparameters.end.tsx"
 				, "string.quoted.single.tsx"
+				, "punctuation.definition.parameters.begin.ts"
+				, "punctuation.definition.parameters.begin.tsx"
+				, "storage.type.function.arrow.ts"
+				, "storage.type.function.arrow.tsx"
+				, "keyword.operator.expression.infer.ts"
+				, "keyword.operator.expression.infer.tsx"
+				, "string.template.ts"
+				, "string.template.tsx"
+				, "constant.numeric.decimal.ts"
+				, "constant.numeric.decimal.tsx"
 			],
 			"settings": {
 				"fontStyle": ""
