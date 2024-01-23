@@ -1,3 +1,9 @@
+/* eslint-disable no-autofix/unused-imports/no-unused-imports */
+import colors from './colors.mjs';
+
+/**
+ * @param {{ name: string; colors: typeof colors }} params
+ */
 export default ( {
     name
     , colors
@@ -5,58 +11,58 @@ export default ( {
     name
     , colors: {
         'editor.background': colors.black
-        , 'editor.foreground': '#e8e8e8'
-        , 'editorBracketHighlight.foreground1': '#96f8a3'
-        , 'editorBracketHighlight.foreground2': '#3b58fa'
-        , 'editorBracketHighlight.foreground3': '#1997c1'
-        , 'editorCursor.foreground': '#e8e8e8'
-        , 'activityBar.activeBackground': '#404cfa'
-        , 'activityBar.background': '#030c14'
-        , 'activityBar.foreground': '#96f8a3'
-        , 'activityBarBadge.background': '#404cfa'
-        , 'activityBarBadge.foreground': '#96f8a3'
-        , 'activityBar.border': '#0a0c27'
-        , 'badge.background': '#96f8a3'
-        , 'badge.foreground': '#030c14'
-        , 'button.foreground': '#e8e8e8'
-        , 'button.background': '#404cfa'
-        , 'button.hoverBackground': '#404cfad6'
-        , 'icon.foreground': '#e8e8e8'
-        , 'tab.activeBackground': '#0d115c'
-        , 'tab.activeBorder': '#96f8a3'
-        , 'tab.activeForeground': '#e8e8e8'
-        , 'tab.hoverBackground': '#e8e8e82f'
-        , 'tab.inactiveBackground': '#030c14'
-        , 'tab.inactiveForeground': '#e8e8e897'
-        , 'panel.background': '#030c14'
-        , 'panel.border': '#96f8a391'
-        , 'panelTitle.activeForeground': '#e8e8e8'
-        , 'breadcrumb.background': '#0a0c27'
-        , 'breadcrumb.foreground': '#96f8a3'
-        , 'minimap.background': '#030c14'
-        , 'sideBar.background': '#030c148e'
-        , 'sideBar.foreground': '#21a3e98b'
-        , 'sideBar.border': '#96f8a391'
-        , 'sideBarSectionHeader.background': '#030c14'
-        , 'sideBarSectionHeader.foreground': '#404cfac4'
-        , 'sideBarSectionHeader.border': '#e8e8e839'
-        , 'statusBar.background': '#0a0c27'
-        , 'titleBar.activeBackground': '#0a0c27'
-        , 'terminal.foreground': '#404cfa'
-        , 'terminal.tab.activeBorder': '#404cfa'
-        , 'terminal.border': '#acfcff'
-        , 'terminalCursor.foreground': '#96f8a3'
-        , 'editorGroupHeader.tabsBackground': '#030c14'
+        , 'editor.foreground': colors.lightGray
+        , 'editorBracketHighlight.foreground1': colors.lightGreen
+        , 'editorBracketHighlight.foreground2': colors.cobalt
+        , 'editorBracketHighlight.foreground3': colors.teal
+        , 'editorCursor.foreground': colors.lightGray
+        , 'activityBar.activeBackground': colors.cobaltDarker
+        , 'activityBar.background': colors.black
+        , 'activityBar.foreground': colors.lightGreen
+        , 'activityBarBadge.background': colors.cobaltDarker
+        , 'activityBarBadge.foreground': colors.lightGreen
+        , 'activityBar.border': colors.black2
+        , 'badge.background': colors.lightGreen
+        , 'badge.foreground': colors.black
+        , 'button.foreground': colors.lightGray
+        , 'button.background': colors.cobaltDarker
+        , 'button.hoverBackground': colors.cobaltTranslucent
+        , 'icon.foreground': colors.lightGray
+        , 'tab.activeBackground': colors.darkBlue
+        , 'tab.activeBorder': colors.lightGreen
+        , 'tab.activeForeground': colors.lightGray
+        , 'tab.hoverBackground': colors.translucentDarkGray
+        , 'tab.inactiveBackground': colors.black
+        , 'tab.inactiveForeground': colors.translucentLightGray
+        , 'panel.background': colors.black
+        , 'panel.border': colors.translucentLightGreen
+        , 'panelTitle.activeForeground': colors.lightGray
+        , 'breadcrumb.background': colors.black2
+        , 'breadcrumb.foreground': colors.lightGreen
+        , 'minimap.background': colors.black
+        , 'sideBar.background': colors.translucentDarkBlue
+        , 'sideBar.foreground': colors.translucentCerulean
+        , 'sideBar.border': colors.translucentLightGreen
+        , 'sideBarSectionHeader.background': colors.black
+        , 'sideBarSectionHeader.foreground': colors.cobaltTranslucent2
+        , 'sideBarSectionHeader.border': colors.translucentGray
+        , 'statusBar.background': colors.black2
+        , 'titleBar.activeBackground': colors.black2
+        , 'terminal.foreground': colors.cobaltDarker
+        , 'terminal.tab.activeBorder': colors.cobaltDarker
+        , 'terminal.border': colors.extraLightTeal
+        , 'terminalCursor.foreground': colors.lightGreen
+        , 'editorGroupHeader.tabsBackground': colors.black
     }
     , semanticHighlighting: true
     , semanticTokenColors: {
         interface: {
             fontStyle: 'italic bold'
-            , foreground: '#404cfa'
+            , foreground: colors.cobaltDarker
         }
         , type: {
             fontStyle: 'italic bold'
-            , foreground: '#404cfa'
+            , foreground: colors.cobaltDarker
         }
         , 'property.readonly': {
             fontStyle: ''
@@ -73,7 +79,7 @@ export default ( {
                 , 'punctuation.definition.comment'
             ]
             , settings: {
-                foreground: '#aebfff'
+                foreground: colors.lilac
             }
         }
         , {
@@ -87,7 +93,7 @@ export default ( {
                 , 'constant.other.placeholder'
             ]
             , settings: {
-                foreground: '#acfcff'
+                foreground: colors.extraLightTeal
             }
         }
         , {
@@ -96,7 +102,7 @@ export default ( {
                 'variable.language.this'
             ]
             , settings: {
-                foreground: '#10dfc0'
+                foreground: colors.mint
             }
         }
         , {
@@ -106,7 +112,7 @@ export default ( {
                 , 'variable.other.enummember'
             ]
             , settings: {
-                foreground: '#21a3e9'
+                foreground: colors.cerulean
                 , 'fontStyle': 'bold'
             }
         }
@@ -120,7 +126,7 @@ export default ( {
                 , 'support.type.primitive'
             ]
             , settings: {
-                foreground: '#404cfa'
+                foreground: colors.cobaltDarker
                 , 'fontStyle': 'bold italic'
             }
         }
@@ -169,7 +175,7 @@ export default ( {
                 , 'entity.name.operator'
             ]
             , settings: {
-                foreground: '#557edf'
+                foreground: colors.grayBlue
             }
         }
         , {
@@ -178,7 +184,7 @@ export default ( {
                 'keyword.operator'
             ]
             , settings: {
-                foreground: '#e7ff9e'
+                foreground: colors.lightYellow
             }
         }
         , {
@@ -194,7 +200,7 @@ export default ( {
                 , 'meta.template.expression.js'
             ]
             , settings: {
-                foreground: '#fa745f'
+                foreground: colors.lightScarlet
             }
         }
         , {
@@ -214,7 +220,7 @@ export default ( {
                 , 'punctuation.definition.typeparameters.begin.tsx'
             ]
             , settings: {
-                foreground: '#50b4f1'
+                foreground: colors.lightCerulean
             }
         }
         , {
@@ -223,7 +229,7 @@ export default ( {
                 'storage.type.function.arrow'
             ]
             , settings: {
-                foreground: '#37e07a'
+                foreground: colors.brightGreen
             }
         }
         , {
@@ -237,7 +243,7 @@ export default ( {
                 , 'keyword.other.substitution'
             ]
             , settings: {
-                foreground: '#b2b8bc'
+                foreground: colors.gray
             }
         }
         , {
@@ -249,7 +255,7 @@ export default ( {
                 , 'punctuation.definition.tag.end.html'
             ]
             , settings: {
-                foreground: '#50b4f1'
+                foreground: colors.lightCerulean
             }
         }
         , {
@@ -260,7 +266,7 @@ export default ( {
                 , 'markup.deleted.git_gutter'
             ]
             , settings: {
-                foreground: '#2466e9'
+                foreground: colors.slateBlue
             }
         }
         , {
@@ -273,7 +279,7 @@ export default ( {
                 , 'keyword.other.special-method'
             ]
             , settings: {
-                foreground: '#d9f461'
+                foreground: colors.neonYellowGreen
             }
         }
         , {
@@ -287,7 +293,7 @@ export default ( {
                 , 'keyword.other'
             ]
             , settings: {
-                foreground: '#37e07a'
+                foreground: colors.brightGreen
             }
         }
         , {
@@ -296,7 +302,7 @@ export default ( {
                 'constant.language'
             ]
             , settings: {
-                foreground: '#10dfc0'
+                foreground: colors.mint
             }
         }
         , {
@@ -305,7 +311,7 @@ export default ( {
                 'constant.numeric'
             ]
             , settings: {
-                foreground: '#ffd500'
+                foreground: colors.gold
             }
         }
         , {
@@ -320,7 +326,7 @@ export default ( {
                 , 'meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js'
             ]
             , settings: {
-                foreground: '#feeded'
+                foreground: colors.feededGray
             }
         }
         , {
@@ -336,7 +342,7 @@ export default ( {
                 , 'support.type.sys-types'
             ]
             , settings: {
-                foreground: '#10dfc0'
+                foreground: colors.mint
                 , 'fontStyle': ''
             }
         }
@@ -349,7 +355,7 @@ export default ( {
                 , 'support.type.sys-types'
             ]
             , settings: {
-                foreground: '#7df81fda'
+                foreground: colors.jsxGreen
                 , 'fontStyle': 'bold'
             }
         }
@@ -361,7 +367,7 @@ export default ( {
                 , 'meta.tag.attributes.tsx'
             ]
             , settings: {
-                foreground: '#448fff'
+                foreground: colors.lightSlateBlue
             }
         }
         , {
@@ -370,7 +376,7 @@ export default ( {
                 'entity.other.attribute-name.html'
             ]
             , settings: {
-                foreground: '#5fb7ed'
+                foreground: colors.gunmetalBlue
             }
         }
         , {
@@ -380,7 +386,7 @@ export default ( {
                 , 'punctuation.definition.comment.html'
             ]
             , settings: {
-                foreground: '#52d486'
+                foreground: colors.brightSage
             }
         }
         , {
@@ -402,7 +408,7 @@ export default ( {
             ]
             , settings: {
                 'fontStyle': 'italic'
-                , foreground: '#e5ecfb'
+                , foreground: colors.coolGray
             }
         }
         , {
@@ -412,7 +418,7 @@ export default ( {
             ]
             , settings: {
                 'fontStyle': 'italic'
-                , foreground: '#788AB3'
+                , foreground: colors.gunmetal
             }
         }
         , {
@@ -421,7 +427,7 @@ export default ( {
                 'support.type.property-name.css'
             ]
             , settings: {
-                foreground: '#448fff'
+                foreground: colors.lightSlateBlue
             }
         }
         , {
@@ -430,7 +436,7 @@ export default ( {
                 'support.constant.property-value.css'
             ]
             , settings: {
-                foreground: '#d9f461'
+                foreground: colors.neonYellowGreen
             }
         }
         , {
@@ -439,7 +445,7 @@ export default ( {
                 'entity.other.attribute-name.class.css'
             ]
             , settings: {
-                foreground: '#10dfc0'
+                foreground: colors.mint
             }
         }
         , {
@@ -452,7 +458,7 @@ export default ( {
                 , 'entity.other.attribute-name.pseudo-element.css'
             ]
             , settings: {
-                foreground: '#acfcff'
+                foreground: colors.extraLightTeal
             }
         }
         , {
@@ -464,7 +470,7 @@ export default ( {
                 , 'keyword.other.unit.percentage.css'
             ]
             , settings: {
-                foreground: '#50b4f1'
+                foreground: colors.lightCerulean
             }
         }
     ]
