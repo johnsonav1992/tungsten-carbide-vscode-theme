@@ -259,14 +259,28 @@ export default ( {
             }
         }
         , {
-            name: 'Tag'
+            name: 'HTML Tag / Generic Tag'
             , scope: [
                 'entity.name.tag'
+                , 'entity.name.tag.html'
                 , 'meta.tag.sgml'
                 , 'markup.deleted.git_gutter'
             ]
             , settings: {
                 foreground: colors.slateBlue
+            }
+        }
+        , {
+            name: 'JSX/TSX Tag'
+            , scope: [
+                'entity.name.tag.tsx'
+                , 'entity.name.tag.jsx'
+                , 'meta.tag.sgml'
+                , 'markup.deleted.git_gutter'
+            ]
+            , settings: {
+                foreground: colors.jsxGreen
+                , fontStyle: 'bold'
             }
         }
         , {
@@ -376,7 +390,7 @@ export default ( {
                 'entity.other.attribute-name.html'
             ]
             , settings: {
-                foreground: colors.gunmetalBlue
+                foreground: colors.neonYellowGreen
             }
         }
         , {
