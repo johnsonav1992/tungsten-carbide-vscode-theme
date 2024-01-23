@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/johnsonav1992/tungsten-carbide-vscode-theme"
   },
+  "scripts": {
+		"build": "node --experimental-modules src/index.mjs",
+		"release": "npm run build && git add dist && git commit -m build-theme && npm version patch & vsce publish && git push"
+	},
   "icon": "images/tc-logo.png",
   "keywords": [
     "tungsten",
@@ -34,5 +38,9 @@
         "path": "./themes/tungsten-carbide-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "johnsonav-eslint-config": "^0.0.4"
   }
 }
