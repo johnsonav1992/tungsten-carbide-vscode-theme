@@ -159,6 +159,12 @@ export default ( {
                 , 'string.template.tsx'
                 , 'constant.numeric.decimal.ts'
                 , 'constant.numeric.decimal.tsx'
+                , 'variable.parameter.ts'
+                , 'meta.brace.round.ts'
+                , 'variable.parameter.tsx'
+                , 'meta.brace.round.tsx'
+                , 'punctuation.definition.parameters.end.ts'
+                , 'punctuation.definition.parameters.end.tsx'
             ]
             , settings: {
                 'fontStyle': ''
