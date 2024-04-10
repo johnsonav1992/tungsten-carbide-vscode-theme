@@ -165,7 +165,7 @@ export default ( {
                 , 'meta.brace.round.tsx'
                 , 'punctuation.definition.parameters.end.ts'
                 , 'punctuation.definition.parameters.end.tsx'
-                , '	keyword.operator.expression.extends.ts'
+                , 'keyword.operator.expression.extends.ts'
             ]
             , settings: {
                 'fontStyle': ''
