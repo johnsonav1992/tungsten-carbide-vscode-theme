@@ -31,8 +31,12 @@ export default {
     , lilac: '#aebfff'
     , lightYellow: '#e7ff9e'
     , lightScarlet: '#fa745f'
+    , ngBinding: '#fa905f'
     , neonYellowGreen: '#d9f461'
     , gold: '#ffd500'
     , jsxGreen: '#7df81fda'
     , brightSage: '#52d486'
+    , pipeGreen: '#5cac5c'
+    , decoratorPurple: '#7c70cc'
+    , paleGreen: '#e1efc0'
 };

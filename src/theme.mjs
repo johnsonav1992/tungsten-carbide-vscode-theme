@@ -106,6 +106,15 @@ export default ( {
             }
         }
         , {
+            name: 'This keyword TS'
+            , scope: [
+                'variable.language.this'
+            ]
+            , settings: {
+                foreground: colors.lilac
+            }
+        }
+        , {
             name: 'Constants and enums'
             , scope: [
                 'variable.other.constant'
@@ -381,6 +390,15 @@ export default ( {
             }
         }
         , {
+            name: 'HTML Attributes'
+            , scope: [
+                'entity.other.attribute-name.html'
+            ]
+            , settings: {
+                foreground: colors.paleGreen
+            }
+        }
+        , {
             name: 'JSX Props'
             , scope: [
                 'entity.other.attribute-name.js.jsx'
@@ -389,15 +407,6 @@ export default ( {
             ]
             , settings: {
                 foreground: colors.lightSlateBlue
-            }
-        }
-        , {
-            name: 'HTML Attributes'
-            , scope: [
-                'entity.other.attribute-name.html'
-            ]
-            , settings: {
-                foreground: colors.neonYellowGreen
             }
         }
         , {
@@ -425,11 +434,12 @@ export default ( {
             name: 'Decorators'
             , scope: [
                 'tag.decorator.js entity.name.tag.js'
-                , 'tag.decorator.js punctuation.definition.tag.js'
+                ,'tag.decorator.js punctuation.definition.tag.js'
+                , 'punctuation.decorator.ts'
+                , 'meta.decorator.ts'
             ]
             , settings: {
-                'fontStyle': 'italic'
-                , foreground: colors.coolGray
+                foreground: colors.decoratorPurple
             }
         }
         , {
@@ -492,6 +502,65 @@ export default ( {
             ]
             , settings: {
                 foreground: colors.lightCerulean
+            }
+        }
+        , {
+            name: 'Decorators'
+            , scope: [
+                'support.function.css'
+            ]
+            , settings: {
+                foreground: colors.brightGreen
+            }
+        }
+        , {
+            name: 'Angular Pipe'
+            , scope: [
+                'entity.name.function.pipe.ng'
+            ]
+            , settings: {
+                foreground: colors.pipeGreen
+                , fontStyle: 'bold italic'
+            }
+        }
+        , {
+            name: 'Angular Template Control Flow & Variables'
+            , scope: [
+                'keyword.control.block.kind.ng'
+                , 'keyword.control.block.transition.ng'
+                , 'storage.type.ng'
+            ]
+            , settings: {
+                foreground: colors.brightGreen
+            }
+        }
+        , {
+            name: 'Angular Event Bindings'
+            , scope: [
+                'entity.other.ng-binding-name.event.html'
+            ]
+            , settings: {
+                foreground: colors.brightGreen
+            }
+        }
+        , {
+            name: 'Angular Property Bindings'
+            , scope: [
+                'entity.other.ng-binding-name.property.html'
+                , 'punctuation.definition.ng-binding-name.begin.html'
+                , 'punctuation.definition.ng-binding-name.end.html'
+            ]
+            , settings: {
+                foreground: colors.lilac
+            }
+        }
+        , {
+            name: 'Angular Template Bindings'
+            , scope: [
+                'entity.other.ng-binding-name.template.html'
+            ]
+            , settings: {
+                foreground: colors.ngBinding
             }
         }
     ]
