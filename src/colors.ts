@@ -1,4 +1,6 @@
-export default {
+import { ColorSet } from "../types/types";
+
+const colors: ColorSet = {
     black: '#030c14'
     , black2: '#0a0c27'
     , translucentGray: '#e8e8e839'
@@ -40,3 +42,5 @@ export default {
     , decoratorPurple: '#7c70cc'
     , paleGreen: '#e1efc0'
 };
+
+export default colors;

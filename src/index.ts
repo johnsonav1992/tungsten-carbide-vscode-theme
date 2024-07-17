@@ -1,11 +1,12 @@
 import { writeFile } from 'fs';
 import { promisify } from 'util';
-import theme from './theme.mjs';
-import colors from './colors.mjs';
+import theme from './theme.js';
+import colors from './colors.js';
+import { Variants } from '../types/types.js';
 
 const promisifiedWriteFile = promisify( writeFile );
 
-const VARIANTS = {
+const VARIANTS: Variants = {
     'Tungsten Carbide': {
         theme: theme
         , colors: colors
@@ -13,7 +14,7 @@ const VARIANTS = {
     }
 };
 
-const buildTheme = async variants => {
+const buildTheme = async ( variants: Variants ) => {
     try {
         await Promise.all(
             Object.entries( variants ).map( ( [ variantName, variant ] ) => {

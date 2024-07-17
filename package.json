@@ -40,7 +40,9 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^20.14.11",
     "eslint": "^8.56.0",
-    "johnsonav-eslint-config": "^0.0.4"
+    "johnsonav-eslint-config": "^0.0.4",
+    "typescript": "^5.5.3"
   }
 }

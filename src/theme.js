@@ -1,5 +1,5 @@
 /* eslint-disable no-autofix/unused-imports/no-unused-imports */
-import colors from './colors.mjs';
+import colors from './colors.js';
 
 /**
  * @param {{ name: string; colors: typeof colors }} params
