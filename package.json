@@ -9,7 +9,7 @@
     "url": "https://github.com/johnsonav1992/tungsten-carbide-vscode-theme"
   },
   "scripts": {
-    "build": "node --experimental-modules src/index.mjs",
+    "build": "node --experimental-modules dist/src/index.js",
     "release": "npm run build && git add themes && git commit -m build-theme && npm version & vsce publish && git push"
   },
   "icon": "images/tc-logo.png",

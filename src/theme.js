@@ -395,7 +395,7 @@ export default ( {
                 'entity.other.attribute-name.html'
             ]
             , settings: {
-                foreground: colors.paleGreen
+                foreground: colors.paleYellowGreen
             }
         }
         , {

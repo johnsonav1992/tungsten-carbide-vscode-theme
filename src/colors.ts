@@ -40,7 +40,7 @@ const colors: ColorSet = {
     , brightSage: '#52d486'
     , pipeGreen: '#5cac5c'
     , decoratorPurple: '#7c70cc'
-    , paleGreen: '#e1efc0'
+    , paleYellowGreen: '#e1eea0'
 };
 
 export default colors;
