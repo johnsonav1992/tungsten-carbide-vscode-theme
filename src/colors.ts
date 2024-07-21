@@ -1,6 +1,6 @@
 import { ColorSet } from "../types/types";
 
-const colors: ColorSet = {
+const colors = {
     black: '#030c14'
     , black2: '#0a0c27'
     , translucentGray: '#e8e8e839'
@@ -41,6 +41,6 @@ const colors: ColorSet = {
     , pipeGreen: '#5cac5c'
     , decoratorPurple: '#7c70cc'
     , paleYellowGreen: '#e1eea0'
-};
+} as const satisfies ColorSet;
 
 export default colors;

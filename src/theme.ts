@@ -1,68 +1,67 @@
-/* eslint-disable no-autofix/unused-imports/no-unused-imports */
-import colors from './colors.js';
+import { 
+    ThemeBuilderFn,
+    VscodeTheme 
+} from '../types/types.js';
 
-/**
- * @param {{ name: string; colors: typeof colors }} params
- */
-export default ( {
+const themeBuilder: ThemeBuilderFn = ( {
     name
-    , colors
-} ) => ( {
+    , colorSet
+} ): VscodeTheme => ( {
     name
     , colors: {
-        'editor.background': colors.black
-        , 'editor.foreground': colors.lightGray
-        , 'editorBracketHighlight.foreground1': colors.lightGreen
-        , 'editorBracketHighlight.foreground2': colors.cobalt
-        , 'editorBracketHighlight.foreground3': colors.teal
-        , 'editorCursor.foreground': colors.lightGray
-        , 'activityBar.activeBackground': colors.cobaltDarker
-        , 'activityBar.background': colors.black
-        , 'activityBar.foreground': colors.lightGreen
-        , 'activityBarBadge.background': colors.cobaltDarker
-        , 'activityBarBadge.foreground': colors.lightGreen
-        , 'activityBar.border': colors.black2
-        , 'badge.background': colors.lightGreen
-        , 'badge.foreground': colors.black
-        , 'button.foreground': colors.lightGray
-        , 'button.background': colors.cobaltDarker
-        , 'button.hoverBackground': colors.cobaltTranslucent
-        , 'icon.foreground': colors.lightGray
-        , 'tab.activeBackground': colors.darkBlue
-        , 'tab.activeBorder': colors.lightGreen
-        , 'tab.activeForeground': colors.lightGray
-        , 'tab.hoverBackground': colors.translucentDarkGray
-        , 'tab.inactiveBackground': colors.black
-        , 'tab.inactiveForeground': colors.translucentLightGray
-        , 'panel.background': colors.black
-        , 'panel.border': colors.translucentLightGreen
-        , 'panelTitle.activeForeground': colors.lightGray
-        , 'breadcrumb.background': colors.black2
-        , 'breadcrumb.foreground': colors.lightGreen
-        , 'minimap.background': colors.black
-        , 'sideBar.background': colors.translucentDarkBlue
-        , 'sideBar.foreground': colors.translucentCerulean
-        , 'sideBar.border': colors.translucentLightGreen
-        , 'sideBarSectionHeader.background': colors.black
-        , 'sideBarSectionHeader.foreground': colors.cobaltTranslucent2
-        , 'sideBarSectionHeader.border': colors.translucentGray
-        , 'statusBar.background': colors.black2
-        , 'titleBar.activeBackground': colors.black2
-        , 'terminal.foreground': colors.cobaltDarker
-        , 'terminal.tab.activeBorder': colors.cobaltDarker
-        , 'terminal.border': colors.extraLightTeal
-        , 'terminalCursor.foreground': colors.lightGreen
-        , 'editorGroupHeader.tabsBackground': colors.black
+        'editor.background': colorSet.black
+        , 'editor.foreground': colorSet.lightGray
+        , 'editorBracketHighlight.foreground1': colorSet.lightGreen
+        , 'editorBracketHighlight.foreground2': colorSet.cobalt
+        , 'editorBracketHighlight.foreground3': colorSet.teal
+        , 'editorCursor.foreground': colorSet.lightGray
+        , 'activityBar.activeBackground': colorSet.cobaltDarker
+        , 'activityBar.background': colorSet.black
+        , 'activityBar.foreground': colorSet.lightGreen
+        , 'activityBarBadge.background': colorSet.cobaltDarker
+        , 'activityBarBadge.foreground': colorSet.lightGreen
+        , 'activityBar.border': colorSet.black2
+        , 'badge.background': colorSet.lightGreen
+        , 'badge.foreground': colorSet.black
+        , 'button.foreground': colorSet.lightGray
+        , 'button.background': colorSet.cobaltDarker
+        , 'button.hoverBackground': colorSet.cobaltTranslucent
+        , 'icon.foreground': colorSet.lightGray
+        , 'tab.activeBackground': colorSet.darkBlue
+        , 'tab.activeBorder': colorSet.lightGreen
+        , 'tab.activeForeground': colorSet.lightGray
+        , 'tab.hoverBackground': colorSet.translucentDarkGray
+        , 'tab.inactiveBackground': colorSet.black
+        , 'tab.inactiveForeground': colorSet.translucentLightGray
+        , 'panel.background': colorSet.black
+        , 'panel.border': colorSet.translucentLightGreen
+        , 'panelTitle.activeForeground': colorSet.lightGray
+        , 'breadcrumb.background': colorSet.black2
+        , 'breadcrumb.foreground': colorSet.lightGreen
+        , 'minimap.background': colorSet.black
+        , 'sideBar.background': colorSet.translucentDarkBlue
+        , 'sideBar.foreground': colorSet.translucentCerulean
+        , 'sideBar.border': colorSet.translucentLightGreen
+        , 'sideBarSectionHeader.background': colorSet.black
+        , 'sideBarSectionHeader.foreground': colorSet.cobaltTranslucent2
+        , 'sideBarSectionHeader.border': colorSet.translucentGray
+        , 'statusBar.background': colorSet.black2
+        , 'titleBar.activeBackground': colorSet.black2
+        , 'terminal.foreground': colorSet.cobaltDarker
+        , 'terminal.tab.activeBorder': colorSet.cobaltDarker
+        , 'terminal.border': colorSet.extraLightTeal
+        , 'terminalCursor.foreground': colorSet.lightGreen
+        , 'editorGroupHeader.tabsBackground': colorSet.black
     }
     , semanticHighlighting: true
     , semanticTokenColors: {
         interface: {
             fontStyle: 'italic bold'
-            , foreground: colors.cobaltDarker
+            , foreground: colorSet.cobaltDarker
         }
         , type: {
             fontStyle: 'italic bold'
-            , foreground: colors.cobaltDarker
+            , foreground: colorSet.cobaltDarker
         }
         , 'property.readonly': {
             fontStyle: ''
@@ -79,7 +78,7 @@ export default ( {
                 , 'punctuation.definition.comment'
             ]
             , settings: {
-                foreground: colors.lilac
+                foreground: colorSet.lilac
             }
         }
         , {
@@ -93,7 +92,7 @@ export default ( {
                 , 'constant.other.placeholder'
             ]
             , settings: {
-                foreground: colors.extraLightTeal
+                foreground: colorSet.extraLightTeal
             }
         }
         , {
@@ -102,7 +101,7 @@ export default ( {
                 'variable.language.this'
             ]
             , settings: {
-                foreground: colors.mint
+                foreground: colorSet.mint
             }
         }
         , {
@@ -111,7 +110,7 @@ export default ( {
                 'variable.language.this'
             ]
             , settings: {
-                foreground: colors.lilac
+                foreground: colorSet.lilac
             }
         }
         , {
@@ -121,7 +120,7 @@ export default ( {
                 , 'variable.other.enummember'
             ]
             , settings: {
-                foreground: colors.cerulean
+                foreground: colorSet.cerulean
                 , 'fontStyle': 'bold'
             }
         }
@@ -135,7 +134,7 @@ export default ( {
                 , 'support.type.primitive'
             ]
             , settings: {
-                foreground: colors.cobaltDarker
+                foreground: colorSet.cobaltDarker
                 , 'fontStyle': 'bold italic'
             }
         }
@@ -191,7 +190,7 @@ export default ( {
                 , 'entity.name.operator'
             ]
             , settings: {
-                foreground: colors.grayBlue
+                foreground: colorSet.grayBlue
             }
         }
         , {
@@ -200,7 +199,7 @@ export default ( {
                 'keyword.operator'
             ]
             , settings: {
-                foreground: colors.lightYellow
+                foreground: colorSet.lightYellow
             }
         }
         , {
@@ -216,7 +215,7 @@ export default ( {
                 , 'meta.template.expression.js'
             ]
             , settings: {
-                foreground: colors.lightScarlet
+                foreground: colorSet.lightScarlet
             }
         }
         , {
@@ -236,7 +235,7 @@ export default ( {
                 , 'punctuation.definition.typeparameters.begin.tsx'
             ]
             , settings: {
-                foreground: colors.lightCerulean
+                foreground: colorSet.lightCerulean
             }
         }
         , {
@@ -245,7 +244,7 @@ export default ( {
                 'storage.type.function.arrow'
             ]
             , settings: {
-                foreground: colors.brightGreen
+                foreground: colorSet.brightGreen
             }
         }
         , {
@@ -259,7 +258,7 @@ export default ( {
                 , 'keyword.other.substitution'
             ]
             , settings: {
-                foreground: colors.gray
+                foreground: colorSet.gray
             }
         }
         , {
@@ -271,7 +270,7 @@ export default ( {
                 , 'punctuation.definition.tag.end.html'
             ]
             , settings: {
-                foreground: colors.lightCerulean
+                foreground: colorSet.lightCerulean
             }
         }
         , {
@@ -283,7 +282,7 @@ export default ( {
                 , 'markup.deleted.git_gutter'
             ]
             , settings: {
-                foreground: colors.slateBlue
+                foreground: colorSet.slateBlue
             }
         }
         , {
@@ -295,7 +294,7 @@ export default ( {
                 , 'markup.deleted.git_gutter'
             ]
             , settings: {
-                foreground: colors.jsxGreen
+                foreground: colorSet.jsxGreen
                 , fontStyle: 'bold'
             }
         }
@@ -309,7 +308,7 @@ export default ( {
                 , 'keyword.other.special-method'
             ]
             , settings: {
-                foreground: colors.neonYellowGreen
+                foreground: colorSet.neonYellowGreen
             }
         }
         , {
@@ -323,7 +322,7 @@ export default ( {
                 , 'keyword.other'
             ]
             , settings: {
-                foreground: colors.brightGreen
+                foreground: colorSet.brightGreen
             }
         }
         , {
@@ -332,7 +331,7 @@ export default ( {
                 'constant.language'
             ]
             , settings: {
-                foreground: colors.mint
+                foreground: colorSet.mint
             }
         }
         , {
@@ -341,7 +340,7 @@ export default ( {
                 'constant.numeric'
             ]
             , settings: {
-                foreground: colors.gold
+                foreground: colorSet.gold
             }
         }
         , {
@@ -356,7 +355,7 @@ export default ( {
                 , 'meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js'
             ]
             , settings: {
-                foreground: colors.feededGray
+                foreground: colorSet.feededGray
             }
         }
         , {
@@ -372,7 +371,7 @@ export default ( {
                 , 'support.type.sys-types'
             ]
             , settings: {
-                foreground: colors.mint
+                foreground: colorSet.mint
                 , 'fontStyle': ''
             }
         }
@@ -385,7 +384,7 @@ export default ( {
                 , 'support.type.sys-types'
             ]
             , settings: {
-                foreground: colors.jsxGreen
+                foreground: colorSet.jsxGreen
                 , 'fontStyle': 'bold'
             }
         }
@@ -395,7 +394,7 @@ export default ( {
                 'entity.other.attribute-name.html'
             ]
             , settings: {
-                foreground: colors.paleYellowGreen
+                foreground: colorSet.paleYellowGreen
             }
         }
         , {
@@ -406,7 +405,7 @@ export default ( {
                 , 'meta.tag.attributes.tsx'
             ]
             , settings: {
-                foreground: colors.lightSlateBlue
+                foreground: colorSet.lightSlateBlue
             }
         }
         , {
@@ -416,7 +415,7 @@ export default ( {
                 , 'punctuation.definition.comment.html'
             ]
             , settings: {
-                foreground: colors.brightSage
+                foreground: colorSet.brightSage
             }
         }
         , {
@@ -439,7 +438,7 @@ export default ( {
                 , 'meta.decorator.ts'
             ]
             , settings: {
-                foreground: colors.decoratorPurple
+                foreground: colorSet.decoratorPurple
             }
         }
         , {
@@ -449,7 +448,7 @@ export default ( {
             ]
             , settings: {
                 'fontStyle': 'italic'
-                , foreground: colors.gunmetal
+                , foreground: colorSet.gunmetal
             }
         }
         , {
@@ -458,7 +457,7 @@ export default ( {
                 'support.type.property-name.css'
             ]
             , settings: {
-                foreground: colors.lightSlateBlue
+                foreground: colorSet.lightSlateBlue
             }
         }
         , {
@@ -467,7 +466,7 @@ export default ( {
                 'support.constant.property-value.css'
             ]
             , settings: {
-                foreground: colors.neonYellowGreen
+                foreground: colorSet.neonYellowGreen
             }
         }
         , {
@@ -476,7 +475,7 @@ export default ( {
                 'entity.other.attribute-name.class.css'
             ]
             , settings: {
-                foreground: colors.mint
+                foreground: colorSet.mint
             }
         }
         , {
@@ -489,7 +488,7 @@ export default ( {
                 , 'entity.other.attribute-name.pseudo-element.css'
             ]
             , settings: {
-                foreground: colors.extraLightTeal
+                foreground: colorSet.extraLightTeal
             }
         }
         , {
@@ -501,7 +500,7 @@ export default ( {
                 , 'keyword.other.unit.percentage.css'
             ]
             , settings: {
-                foreground: colors.lightCerulean
+                foreground: colorSet.lightCerulean
             }
         }
         , {
@@ -510,7 +509,7 @@ export default ( {
                 'support.function.css'
             ]
             , settings: {
-                foreground: colors.brightGreen
+                foreground: colorSet.brightGreen
             }
         }
         , {
@@ -519,7 +518,7 @@ export default ( {
                 'entity.name.function.pipe.ng'
             ]
             , settings: {
-                foreground: colors.pipeGreen
+                foreground: colorSet.pipeGreen
                 , fontStyle: 'bold italic'
             }
         }
@@ -531,7 +530,7 @@ export default ( {
                 , 'storage.type.ng'
             ]
             , settings: {
-                foreground: colors.brightGreen
+                foreground: colorSet.brightGreen
             }
         }
         , {
@@ -540,7 +539,7 @@ export default ( {
                 'entity.other.ng-binding-name.event.html'
             ]
             , settings: {
-                foreground: colors.brightGreen
+                foreground: colorSet.brightGreen
             }
         }
         , {
@@ -551,7 +550,7 @@ export default ( {
                 , 'punctuation.definition.ng-binding-name.end.html'
             ]
             , settings: {
-                foreground: colors.lilac
+                foreground: colorSet.lilac
             }
         }
         , {
@@ -560,8 +559,10 @@ export default ( {
                 'entity.other.ng-binding-name.template.html'
             ]
             , settings: {
-                foreground: colors.ngBinding
+                foreground: colorSet.ngBinding
             }
         }
     ]
 } );
+
+export default themeBuilder;

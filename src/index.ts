@@ -2,13 +2,13 @@ import { writeFile } from 'fs';
 import { promisify } from 'util';
 import theme from './theme.js';
 import colors from './colors.js';
-import { Variants } from '../types/types.js';
+import { TungstenCarbidePalette, Variants } from '../types/types.js';
 
 const promisifiedWriteFile = promisify( writeFile );
 
 const VARIANTS: Variants = {
     'Tungsten Carbide': {
-        theme: theme
+        theme
         , colors: colors
         , getColor: color => color
     }
@@ -19,13 +19,13 @@ const buildTheme = async ( variants: Variants ) => {
         await Promise.all(
             Object.entries( variants ).map( ( [ variantName, variant ] ) => {
                 const themeWithColors = variant.theme( {
-                    'name': variantName
-                    , 'colors': Object.entries( colors ).reduce(
+                    name: variantName
+                    , colorSet: Object.entries( colors ).reduce(
                         ( acc, [ colorName, colorValue ] ) => ( {
                             ...acc
                             , [ colorName ]: variant.getColor( colorValue )
                         } ),
-                        {}
+                        {} as TungstenCarbidePalette
                     )
                 } );
 
