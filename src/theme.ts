@@ -279,6 +279,7 @@ const themeBuilder: ThemeBuilderFn = ( {
             , scope: [
                 'text.html.derivative meta.tag.custom.start.html entity.name.tag.html'
                 , 'text.html.derivative meta.tag.custom.end.html entity.name.tag.html'
+                , 'meta.tag.other.unrecognized.html.derivative entity.name.tag.html'
             ]
             , settings: {
                 foreground: colorSet.decoratorPurple
