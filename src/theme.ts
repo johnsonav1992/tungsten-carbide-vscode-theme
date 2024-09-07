@@ -69,6 +69,7 @@ const themeBuilder: ThemeBuilderFn = ( {
         , 'parameter.defaultLibrary': {
             fontStyle: ''
         }
+        , class: {}
     }
     , tokenColors: [
         {
@@ -274,6 +275,17 @@ const themeBuilder: ThemeBuilderFn = ( {
             }
         }
         , {
+            name: 'HTML Custom Tags'
+            , scope: [
+                'text.html.derivative meta.tag.custom.start.html entity.name.tag.html'
+                , 'text.html.derivative meta.tag.custom.end.html entity.name.tag.html'
+            ]
+            , settings: {
+                foreground: colorSet.decoratorPurple
+                , fontStyle: "bold"
+            }
+        }
+        , {
             name: 'HTML Tag / Generic Tag'
             , scope: [
                 'entity.name.tag'
@@ -389,6 +401,15 @@ const themeBuilder: ThemeBuilderFn = ( {
             }
         }
         , {
+            name: 'HTML Custom Attributes'
+            , scope: [
+                'meta.attribute.unrecognized entity.other.attribute-name.html',
+            ]
+            , settings: {
+                foreground: colorSet.lightGreen
+            }
+        }
+        , {
             name: 'HTML Attributes'
             , scope: [
                 'entity.other.attribute-name.html'
@@ -436,6 +457,7 @@ const themeBuilder: ThemeBuilderFn = ( {
                 ,'tag.decorator.js punctuation.definition.tag.js'
                 , 'punctuation.decorator.ts'
                 , 'meta.decorator.ts'
+                , 'source.ts meta.decorator.ts meta.function-call.ts entity.name.function.ts'
             ]
             , settings: {
                 foreground: colorSet.decoratorPurple

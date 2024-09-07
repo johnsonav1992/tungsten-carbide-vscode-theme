@@ -2,13 +2,14 @@
   "name": "tungsten-carbide",
   "displayName": "Tungsten Carbide Theme",
   "description": "Sleek dark theme with a pop of neon",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "publisher": "johnsonav",
   "repository": {
     "type": "git",
     "url": "https://github.com/johnsonav1992/tungsten-carbide-vscode-theme"
   },
   "scripts": {
+    "refresh": "tsc && npm run build",
     "build": "node --experimental-modules dist/src/index.js",
     "release": "npm run build && git add themes && git commit -m build-theme && npm version & vsce publish && git push"
   },
