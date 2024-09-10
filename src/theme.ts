@@ -571,9 +571,10 @@ const themeBuilder: ThemeBuilderFn = ( {
                 'entity.other.ng-binding-name.property.html'
                 , 'punctuation.definition.ng-binding-name.begin.html'
                 , 'punctuation.definition.ng-binding-name.end.html'
+                , 'entity.other.ng-binding-name.ngModel.html'
             ]
             , settings: {
-                foreground: colorSet.lilac
+                foreground: colorSet.gunmetalBlue
             }
         }
         , {
